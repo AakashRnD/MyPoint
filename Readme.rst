@@ -1,4 +1,4 @@
-::::::::::::::::::::::::::::::::::::::::::::::::Contents::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::Contents:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 1. Source Code    : Folder named Interactive_Lesson_Learner_myPoint.
 2. Apk            : Interactive_Lesson_Learner_myPoint.apk
@@ -6,7 +6,7 @@
 4. Presentation   : MyPoint.pptx
 
 
-::::::::::::::::::::::::::::::::::::::::::::::::Description myPoint::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::Description myPoint::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
              The application aims to develop Interactive Lessons for students through which they can learn,
              understand, practice and evaluate themselves. It provides flexibility of studying anytime,
@@ -15,7 +15,7 @@
              provides functionalities which help students to explore respective lesson beyond the scope of textbook.
 
 
-::::::::::::::::::::::::::::::::::::::::::::::::Installation Process::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::Installation Process::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 	---- Copy the Interactive_Lesson_Learner_myPoint.apk file into your android device.
 	---- Tap on Interactive_Lesson_Learner_myPoint.apk file and follow the instructions to install.

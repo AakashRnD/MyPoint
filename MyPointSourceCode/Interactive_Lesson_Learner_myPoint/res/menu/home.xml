@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+     <item
+        android:id="@+id/aboutus"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/info"
+        android:title="	AboutUs"/>
+     
+     <item
+        android:id="@+id/audio_guide"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/audioic"
+        android:title="	Audio Guide"/>
+
+</menu>

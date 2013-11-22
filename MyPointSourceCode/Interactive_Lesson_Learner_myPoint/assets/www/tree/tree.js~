@@ -1,0 +1,274 @@
+
+var xa,ya;
+var x,y,t=0,m;
+
+function end()
+{
+clearInterval(intervalId);
+
+}
+
+//---------------------------------------------
+
+window.onload = function(){
+	var canvas = document.getElementById("workspace");
+	var ctx = canvas.getContext("2d");
+	
+	ctx.fillStyle="black";
+	ctx.font="bold italic 18px Comic Sans MS";
+	ctx.fillText("Tap on image to view details", 105,canvas.height-20);
+	ctx.fillText("Project Guide",canvas.width/2+30,40),
+	
+    db_image= new Image();
+    db_image.src = "db.jpg";
+    db_image.onload = function(){
+    ctx.drawImage(db_image, canvas.width/2-20,3);
+	}
+	
+    intervalId = setInterval(function () {
+t++;
+  draw1();
+}, 30);
+window.addEventListener('mousemove', mouseMove,true);
+ 
+
+};
+
+//---------------------------------------------
+
+jQuery(document).ready(function(){
+})
+
+//---------------------------------------------
+
+function draw1() {
+	var canvas = document.getElementById("workspace");
+	var ctx = canvas.getContext("2d");	
+	ctx.fillStyle="black";
+	ctx.font="bold italic 18px Comic Sans MS";
+	ctx.fillText(".", canvas.width/2+5-t,50+t);
+	if(t==50)
+	{
+	end();
+	 ms_image= new Image();
+    ms_image.src = "ms.jpg";
+    ms_image.onload = function(){
+    ctx.drawImage(ms_image, canvas.width/2-80,80);
+    ctx.fillText("Project Manager",canvas.width/2-230,110);
+	} 
+    t=0;	
+	intervalId = setInterval(function () {
+   t++;
+  draw2();
+}, 30);
+}		
+}
+
+//---------------------------------------------------------------
+function draw2() {
+	var canvas = document.getElementById("workspace");
+	var ctx = canvas.getContext("2d");	
+	ctx.fillStyle="black";
+	ctx.font="bold italic 18px Comic Sans MS";
+	ctx.fillText(".", canvas.width/2+2*t-40,100+t);
+	if(t==50)
+	{
+	end();
+	ys_image= new Image();
+    ys_image.src = "ys.jpg";
+    ys_image.onload = function(){
+    ctx.drawImage(ys_image, canvas.width/2+40,120);
+    ctx.fillText("Project Mentor",canvas.width/2+90,150);
+	}
+	 t=0;	
+	 //to draw straight line
+	    ctx.beginPath();
+		ctx.moveTo(150, 180);
+		ctx.lineTo(150, 160);
+		ctx.lineTo(150, 180);
+		ctx.lineTo(canvas.width-150, 180);
+		ctx.lineTo(canvas.width-150, 160);
+		ctx.lineTo(canvas.width-150, 180);
+		ctx.closePath();
+		ctx.stroke();
+	intervalId = setInterval(function () {
+    t++;
+    draw3();
+}, 30);
+}	
+}
+
+//---------------------------------------------
+
+function draw3() {
+	var canvas = document.getElementById("workspace");
+	var ctx = canvas.getContext("2d");	
+	ctx.fillStyle="black";
+	ctx.font="bold italic 18px Comic Sans MS";
+	ctx.fillText(".", canvas.width/2,180+t);
+	if(t==20)
+	{
+	end();
+    t=0;	
+	intervalId = setInterval(function () {
+   t++;
+  draw4();
+}, 30);
+}		
+}
+
+//---------------------------------------------------------------
+
+function draw4() {
+	var canvas = document.getElementById("workspace");
+	var ctx = canvas.getContext("2d");	
+	ctx.fillStyle="black";
+	ctx.font="bold italic 18px Comic Sans MS";
+	ctx.fillText(".", canvas.width/2-t,200);
+	ctx.fillText(".", canvas.width/2+t,200);
+	if(t==140)
+	{
+	end();
+	
+    t=0;	
+	intervalId = setInterval(function () {
+   t++;
+  draw5();
+}, 30);
+}		
+}
+
+//---------------------------------------------------------------
+
+function draw5() {
+	var canvas = document.getElementById("workspace");
+	var ctx = canvas.getContext("2d");	
+	ctx.fillStyle="black";
+	ctx.font="bold italic 18px Comic Sans MS";
+	ctx.fillText(".", canvas.width/2-140,200+t);
+	ctx.fillText(".", canvas.width/2-47,200+t);
+	ctx.fillText(".", canvas.width/2+47,200+t);
+	ctx.fillText(".", canvas.width/2+140,200+t);
+	if(t==20)
+	{
+	end();
+	n_image= new Image();
+    n_image.src = "n.jpg";
+    n_image.onload = function(){
+    ctx.drawImage(n_image, canvas.width/2-160,220);
+    ctx.fillText("Developer",canvas.width/2-175,290);
+    }
+    m_image= new Image();
+    m_image.src = "m.JPG";
+    m_image.onload = function(){
+    ctx.drawImage(m_image, canvas.width/2-67,220);
+    ctx.fillText("Developer",canvas.width/2-82,290);
+    }	
+    u_image= new Image();
+    u_image.src = "u.jpg";
+    u_image.onload = function(){
+    ctx.drawImage(u_image, canvas.width/2+27,220);
+    ctx.fillText("Developer",canvas.width/2+12,290);
+	}
+	r_image= new Image();
+    r_image.src = "r.jpg";
+    r_image.onload = function(){
+    ctx.drawImage(r_image, canvas.width/2+120,220);
+    ctx.fillText("Developer",canvas.width/2+105,290);
+	}
+
+}		
+}
+
+
+function mouseMove(e)
+{
+	var canvas = document.getElementById("workspace");
+	var ctx = canvas.getContext("2d");
+	var xPos=e.clientX;
+	var yPos=e.clientY;
+	if((xPos >canvas.width/2-10&& yPos>3 )&&( xPos<canvas.width/2+40 && yPos<53)){
+    first();	
+	}
+	if((xPos >canvas.width/2-70&& yPos>90 )&&( xPos<canvas.width/2-20 && yPos<140)){
+    second();	
+	}
+	if((xPos >canvas.width/2+50&& yPos>130 )&&( xPos<canvas.width/2+100 && yPos<180)){
+    third();	
+	}
+	if((xPos >canvas.width/2-150&& yPos>230 )&&( xPos<canvas.width/2-100 && yPos<280)){
+    fourth();	
+	}
+	if((xPos >canvas.width/2-57&& yPos>230  )&&( xPos<canvas.width/2-7 && yPos<280)){
+   fifth();	
+	}
+	if((xPos >canvas.width/2+37&& yPos>230  )&&( xPos<canvas.width/2+87 && yPos<280)){
+    sixth();	
+	}
+	if((xPos >canvas.width/2+130&& yPos>230  )&&( xPos<canvas.width/2+180 && yPos<280)){
+    seventh();	
+	}
+	}
+
+function first()
+{
+var img = document.getElementById("image");
+img.src="gp1.jpg";
+var element=document.getElementById("details");
+element.innerHTML="Dr. Deepak.B.Phatak<br>Subrao M. Nilekani Chair Professor,<br>Department of CSE,IIT Bombay";
+return false;
+}
+
+function second()
+{
+var img = document.getElementById("image");
+img.src="gp2.jpg";
+var element=document.getElementById("details");
+element.innerHTML="Dr.Madhuri Sawant<br>Senior Research Scientist,IIT Bombay <br> Project Manager";
+return false;
+}
+
+function third()
+{
+var img = document.getElementById("image");
+img.src="gp3.jpg";
+var element=document.getElementById("details");
+element.innerHTML="Mr. Yougansh Sharma<br> Software Engineer,IIT Bombay <br> Project Guide";
+return false;
+}
+
+function fourth()
+{
+var img = document.getElementById("image");
+img.src="gp4.jpg";
+var element=document.getElementById("details");
+element.innerHTML="Nikhilesh Ganesan<br> SASTRA University, Tamil Nadu";
+return false;
+}
+
+function fifth()
+{
+var img = document.getElementById("image");
+img.src="gp5.jpg";
+var element=document.getElementById("details");
+element.innerHTML="Mradu Bansal<br>MITS, Lakshmangarh<br>";
+return false;
+}
+
+function sixth()
+{
+var img = document.getElementById("image");
+img.src="gp6.jpg";
+var element=document.getElementById("details");
+element.innerHTML="Upendra Jat<br> National Institute of Technology, Agartala";
+return false;
+}
+
+function seventh()
+{
+var img = document.getElementById("image");
+img.src="gp7.jpg";
+var element=document.getElementById("details");
+element.innerHTML="Rindu John<br>Techno India njr institute of technology, UDAIPUR<br>";
+return false;
+}

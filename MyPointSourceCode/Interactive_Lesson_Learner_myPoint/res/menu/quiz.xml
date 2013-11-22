@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item
+        android:id="@+id/home"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:title="Home"
+        android:icon="@drawable/homeimage"/>
+    <item
+        android:id="@+id/scratchpad"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/scratchpad"
+        android:title="Scratch Pad"/>
+</menu>

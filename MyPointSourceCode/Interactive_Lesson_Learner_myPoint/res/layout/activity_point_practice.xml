@@ -1,0 +1,134 @@
+<com.example.pointpractice.view.viewgroup.FlyOutContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:ignore="HardcodedText" 
+    android:id="@+id/screenRoot2">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/leftmenu"
+        android:background="#9fff99"
+        android:orientation="vertical" >
+
+        <TextView 
+            android:id="@+id/x_cordinate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="	X Co-ordinate"
+            android:textColor="#000000"
+            android:paddingLeft="5dp"
+            android:textSize="20sp"              
+             />
+        
+        <EditText 
+            android:id="@+id/x_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            />
+        
+        <TextView 
+            android:id="@+id/y_cordinate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="	Y Co-ordinate"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"
+            android:textColor="#000000"          
+             />
+        
+        <EditText 
+            android:id="@+id/y_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            
+            />
+        
+        <Button
+            android:id="@+id/display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plot Point"
+            android:onClick="plot"
+            android:layout_marginLeft="80dp"
+            />
+        
+        <TextView 
+            android:id="@+id/zoom_graph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zoom Graph"
+            android:textSize="20sp"
+            android:textColor="#000000"
+             android:layout_marginLeft="80dp"          
+             />
+        
+        <SeekBar 
+            android:id="@+id/zoom"
+            android:paddingTop="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"            
+            android:max="100"
+ 			android:progress="50"
+ 			android:gravity="center"
+ 			android:layout_gravity="center"
+ 			android:progressDrawable="@layout/progress_drawable"
+ 			android:thumb="@layout/thumb_drawable"
+            />
+        
+        <TextView
+			android:paddingTop="10dip"
+ 			android:layout_width="fill_parent"
+ 			android:layout_height="wrap_content"
+ 			android:gravity="center"
+ 			android:textColor="#000000"
+ 			android:text="0%"
+			android:textSize="16sp"
+ 			android:id="@+id/percent"/>
+        
+        
+       <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal" 
+         android:layout_marginLeft="10dp"
+         >   
+       			 <Button
+            		android:id="@+id/close"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="Hide Menu  "
+            		android:onClick="close"
+            	/>
+        
+        		<Button
+            		android:id="@+id/reset"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="Reset Graph"
+            		android:onClick="reset"
+            	/>
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+
+    <LinearLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/container"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    > 
+        <com.example.pointpractice.view.viewgroup.DrawView 
+             android:layout_width="fill_parent"
+	       	android:layout_height="fill_parent"
+            />
+        
+        
+    </LinearLayout>
+
+</com.example.pointpractice.view.viewgroup.FlyOutContainer>

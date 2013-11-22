@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ill"
+    android:configChanges="keyboardHidden|orientation"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="myPoint"
+        android:screenOrientation="landscape"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.ill.HomeActivity"
+            android:label="MyPoint"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.ill.MainActivity"
+            android:label="MyPoint"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.ill.MenuPractice"
+            android:label="@string/title_activity_menu_practice"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.ill.AnimationActivity"
+            android:label="Recap"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.ill.QuizActivity"
+            android:label="Quiz"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.pointfragment.MainActivity"
+            android:label="MyPoint"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.ill.PointActivity"
+            android:label="MyPoint"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.scalingpractice.SampleActivity"
+            android:label="Scaling Practice"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.pointpractice.SampleActivity"
+            android:label="Point Practice"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.pointtest.MainActivity"
+            android:label="PointTest"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.pointtest.Results"
+            android:label="Results of Quiz"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.pointtest.Explanation"
+            android:label="Explanation"
+            android:parentActivityName="com.example.ill.MainActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.pointtest.LaunchScreen"
+            android:label="PointTest"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.linetest.MainActivity"
+            android:label="LineTest"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.linetest.Results"
+            android:label="Results of Quiz"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.linetest.Explanation"
+            android:label="Explanation"
+            android:parentActivityName="com.example.ill.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.example.linetest.LaunchScreen"
+            android:label="LineTest" >
+        </activity>
+        <activity
+            android:name="com.example.finaleasy.MainActivity"
+            android:label="LineTest" >
+        </activity>
+        <activity
+            android:name="com.example.finaleasy.Results"
+            android:label="Results of Quiz" >
+        </activity>
+        <activity
+            android:name="com.example.finaleasy.Explanation"
+            android:label="Explanation"
+            android:parentActivityName="com.example.ill.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.example.finaltough.MainActivity"
+            android:label="LineTest"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.finaltough.Results"
+            android:label="Results of Quiz"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.finaltough.Explanation"
+            android:label="Explanation"
+            android:parentActivityName="com.example.ill.MainActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.ill.MainScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="MyPoint"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.linepractice.MainActivity"
+            android:label="Line Practice"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.linepractice.Solve"
+            android:label="Solving a Line"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.linepractice.DrawLine"
+            android:label="Drawing a Line"
+            android:parentActivityName="com.example.linepractice.MainActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.scratchpad.MainActivity"
+            android:label="Scratch Pad"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.ill.AboutUs"
+            android:label="About Us"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.ill.PointFDMainActivity"
+            android:label="@string/title_activity_point_fdmain" >
+        </activity>
+    </application>
+
+</manifest>

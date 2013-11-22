@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+ <meta name="viewport" content="width=device-width"/>
+<head>
+
+<style>
+ #toast {
+      	position: fixed;
+	  	top: 20px;
+	  	left: 50%;
+	  	width: 200px;
+ 	  	margin-left: -100px;
+	  	border: 1px solid #666;
+		background-color: #B1BCCF;
+		padding: 10px 0 ;
+		text-align:center;
+		opacity: .9;
+ 
+
+	-webkit-transition: opacity 0.5s ease-out; /* Saf3.2+, Chrome */
+	-moz-transition: opacity 0.5s ease-out; /* FF4+ */
+	-ms-transition: opacity 0.5s ease-out; /* IE10? */
+	-o-transition: opacity 0.5s ease-out; /* Opera 10.5+ */
+	transition: opacity 0.5s ease-out;
+      }
+	   body {
+               
+				background-color:PaleGreen ;
+            }
+
+
+</style>
+
+
+
+<script src="point1.js"></script>
+<script src="pie.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js">
+    </script>
+    
+ 
+    
+</head>
+<body>
+<table>
+<tr>
+<td>
+<div id="container">
+
+<canvas id="workspace" width="500px" height="350px" style="border:2px solid #d3d3d3;">
+
+</canvas></td>
+<td>
+<div id="timer" align="center"></div>
+<form action="" align="center">
+<p id="pp"> SCALE:<br>
+ X axis : 1 cm = 1 unit<br>
+ X axis : 1 cm = 1 unit</p>
+<div id="result"></div>
+
+<p id="a">Locate the point from given coordinates</p>
+<p id="xx"></p>
+<p id="yy"></p>
+</form>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<button type="button" id="b" align="middle" onclick="reset()">NEXT</button>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<button type="button" id="submit" onclick="submit()" align="middle" >SUBMIT</button>
+<br>
+
+</td>
+</tr>
+</table>
+</div>
+
+
+<script>
+  (function() {
+  
+        container = doc.getElementById('container'),
+        canvas = doc.getElementById('workspace');
+    
+      canvas.height = 350;
+      canvas.width  = 500;
+      container.style.height = h+"px";
+      container.style.width = w+"px";
+   
+  })();
+  </script>
+
+
+</body>
+
+</html>

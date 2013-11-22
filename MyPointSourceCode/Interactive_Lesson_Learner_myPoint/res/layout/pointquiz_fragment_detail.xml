@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    
+    
+    <TextView 
+    
+    android:id="@+id/items_detail"
+    style="?android:attr/textAppearanceLarge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="invisible"
+    android:padding="16dp"
+    android:textIsSelectable="true"
+    android:text="Question"
+     />
+   
+        <ImageView android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:id="@+id/imageView" 
+            android:layout_marginTop="47dp" 
+            android:src="@drawable/ic_launcher"
+            android:visibility="invisible"
+            />
+
+<RadioGroup
+    android:id="@+id/answers"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    
+    android:layout_alignParentTop="true"
+    android:visibility="invisible"
+    android:paddingLeft="300dp">
+    
+        <RadioButton
+        android:id="@+id/answer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:visibility="invisible"
+        android:text="Answer 1" />
+
+    <RadioButton
+        android:id="@+id/answer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer 2"
+        android:visibility="invisible"
+         />
+
+    <RadioButton
+        android:id="@+id/answer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer 3"
+        android:visibility="invisible" />
+
+    <RadioButton
+        android:id="@+id/answer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer 4"
+        android:visibility="invisible" />
+</RadioGroup>
+
+</RelativeLayout>

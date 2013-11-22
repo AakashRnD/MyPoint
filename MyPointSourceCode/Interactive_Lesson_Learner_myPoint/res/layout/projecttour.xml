@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@drawable/tour">
+ 
+ 
+     <Button
+         android:id="@+id/dialogButtonOK"
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:text="Close" />
+	 
+     
+     <TextView
+         android:id="@+id/textView_tour"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:textColor="#ffffff"
+         android:text="Sample"
+         android:textSize="20px" />     
+
+     <Button
+         android:id="@+id/tournext"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/dialogButtonOK"
+         android:layout_alignParentRight="true"
+         android:background="@drawable/nextbtn"/>
+
+     <Button
+         android:id="@+id/tourback"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/tourBack"
+         android:layout_alignBottom="@+id/tournext"
+         android:layout_alignParentLeft="true"
+         android:background="@drawable/backbtn" />
+ 
+</RelativeLayout>

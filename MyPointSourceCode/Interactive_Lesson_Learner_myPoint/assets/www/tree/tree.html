@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<script src="tree.js"></script>
+</head>
+<body>
+<table>
+<tr>
+<td>
+<div id="container">
+<canvas id="workspace" width="500px" height="350px" style="border:5px solid #d3d3d3;">
+</canvas></td>
+<td>
+<div id="container">
+<img id="image" src = "logo.png" width="250" height="250"/>
+<p id="details"><b> &nbsp &nbsp &nbsp &nbsp &nbsp  Learn Plotting Your Way</b></p>
+</td>
+</tr>
+</table>
+</div>
+<script>
+  (function() {
+  
+        container = doc.getElementById('container'),
+        canvas = doc.getElementById('workspace');
+    
+      canvas.height = 350;
+      canvas.width  = 500;
+      container.style.height = h+"px";
+      container.style.width = w+"px";
+   
+  })();
+</script>
+</body>
+</html>

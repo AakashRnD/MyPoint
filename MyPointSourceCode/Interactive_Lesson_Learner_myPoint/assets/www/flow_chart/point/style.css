@@ -1,0 +1,33 @@
+body{
+	background-color:#9FFF99;
+}
+
+ul
+{
+list-style-type:none;
+padding:0px;
+margin:0px;
+}
+
+img{
+	
+	margin-left:120px;
+}
+
+
+img[id="image"]{
+	
+	margin-left:10px;
+}
+
+button{
+    background-color:#58960D;	
+	color:#fff;
+	font-family:'Helvetica Neue',sans-serif;
+	font-size:15px;
+	border-radius:50px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border:1px solid #1A87B9
+
+}

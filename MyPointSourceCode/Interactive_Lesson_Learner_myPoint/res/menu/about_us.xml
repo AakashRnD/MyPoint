@@ -1,0 +1,75 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<item android:id="@+id/webmenu"
+    android:showAsAction="always"
+    android:icon="@drawable/webicon"> 
+    
+    <menu>
+        <item 
+            android:id="@+id/cplane"
+            android:title="C-Plane"
+            >
+            <menu >
+        
+        <item android:id="@+id/cpsubmenu1"
+            android:title="Wikipedia" 
+            />
+        <item android:id="@+id/cpsubmenu2"
+            android:title="Khan Academy" 
+            />
+    </menu>
+    
+            </item>
+        
+        <item 
+            android:id="@+id/plotting"
+            android:title="Plotting">
+        	<menu>
+        
+		        <item android:id="@+id/plsubmenu1"
+		            android:title="Wikipedia" 
+		            />
+		        <item android:id="@+id/plsubmenu2"
+		            android:title="Khan Academy" 
+		            />
+    		</menu>
+       </item>
+
+        
+        <item 
+            android:id="@+id/line"
+            android:title="Line">
+            <menu>
+        
+		        <item android:id="@+id/lisubmenu1"
+		            android:title="Wikipedia" 
+		            />
+		        <item android:id="@+id/lisubmenu2"
+		            android:title="Khan Academy" 
+		            />
+    		</menu>
+    
+		</item>
+        
+        <item 
+            android:id="@+id/quiz"
+            android:title="Quiz">
+            
+            <menu>
+		        <item android:id="@+id/qusubmenu1"
+		            android:title="Wikipedia" 
+		            />
+		        <item android:id="@+id/qusubmenu2"
+		            android:title="Khan Academy" 
+		            />
+    		</menu>
+   		</item>
+		<item 
+            android:id="@+id/google"
+            android:title="Google">
+   		</item> 
+    
+    </menu>
+    
+    </item>
+
+</menu>

@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"   
+    android:background="#9fff99"
+    tools:context=".Explanation" >
+
+    <TextView
+        android:id="@+id/exp_q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:text="Question"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/explanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ans_selected"
+        android:layout_below="@+id/ans_selected"        
+        android:text="Explanation"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/correct_ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/exp_q"
+        android:layout_below="@+id/exp_q"
+        android:text="Correct Answer"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/ans_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/correct_ans"
+        android:layout_below="@+id/correct_ans"
+        android:text="Selected"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginRight="25dp"
+        android:onClick="next"
+        android:background="@drawable/roundshapebtn"
+        android:text="  Next  "
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:onClick="previous"
+        android:background="@drawable/roundshapebtn"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        android:text="Previous" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:paddingTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/button1"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/ic_launcher"
+        android:visibility="invisible" />
+    
+</RelativeLayout>

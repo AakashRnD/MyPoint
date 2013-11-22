@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$DummySectionFragment"
+    android:background="@drawable/main_activity"
+   >
+
+    <Button
+        android:id="@+id/button_point_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_point_4"
+        android:layout_alignRight="@+id/button_point_4"
+        android:layout_below="@+id/button_point_4"
+        android:layout_marginTop="20dp"
+        android:text="Quiz-It" 
+        android:background="@drawable/roundshapebtn"
+        android:onClick="scalingtest"/>
+
+    <Button
+        android:id="@+id/button_point_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/roundshapebtn"
+        android:onClick="scalinggen1"
+        android:text="Practical Example" />
+
+    <Button
+        android:id="@+id/button_point_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_point_1"
+        android:layout_alignRight="@+id/button_point_1"
+        android:layout_below="@+id/button_point_1"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundshapebtn"
+        android:onClick="scalingexplanation"
+        android:text="Scaling Basics" />
+
+    <Button
+        android:id="@+id/button_point_solved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_point_3"
+        android:layout_alignRight="@+id/button_point_3"
+        android:layout_below="@+id/button_point_3"
+        android:layout_marginTop="20dp"
+        android:onClick="scalingsolved"
+        android:background="@drawable/roundshapebtn"
+        android:text="Solved Example" />
+
+    <Button
+        android:id="@+id/button_point_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_point_solved"
+        android:layout_alignRight="@+id/button_point_solved"
+        android:layout_below="@+id/button_point_solved"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundshapebtn"
+        android:onClick="scalingpractice"
+        android:text="Practice" />
+    
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    
+     <item
+        android:id="@+id/homeee"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/homeimage"
+        android:title="Home">
+    </item>
+    
+    
+    
+    <item
+        android:id="@+id/left"
+        android:showAsAction="always"
+        android:title="Change Scale">
+    </item>
+    
+    <item
+        android:id="@+id/screenshot"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/screen"
+        android:title="Save Screen">
+    </item>
+    
+    <item
+        android:id="@+id/instructions"
+        android:showAsAction="always"
+        android:icon="@drawable/help"
+        android:title="	Help">
+        
+       	<menu>
+            <item
+        		android:id="@+id/text_scaling_help"
+        		android:showAsAction="ifRoom|withText"
+        		android:icon="@drawable/texthelp"
+        		android:title="	Text">
+    		</item>
+    
+		    <item
+		        android:id="@+id/audio_scaling"
+		        android:orderInCategory="100"
+		        android:showAsAction="ifRoom|withText"
+		        android:icon="@drawable/audioic"
+		        android:title="	Audio Help"/>
+    
+    	</menu>
+    	
+    </item> 
+</menu> 

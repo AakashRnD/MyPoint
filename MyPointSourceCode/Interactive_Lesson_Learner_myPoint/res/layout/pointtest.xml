@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@drawable/tour"
+    >
+ 
+ 
+     <Button
+         android:id="@+id/dialogButtonOK"
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:text="Close" />
+	
+     <Button
+         android:id="@+id/button_point_test1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/button_point_test2"
+         android:layout_alignParentTop="true"
+         android:background="@drawable/roundshapebtn"
+         android:layout_alignRight="@+id/button_point_test3"
+         android:layout_marginTop="42dp"
+         android:text="Quiz 1" />
+
+     <Button
+         android:id="@+id/button_point_test2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/button_point_test3"
+         android:layout_alignRight="@+id/button_point_test3"
+         android:layout_below="@+id/button_point_test1"
+         android:layout_marginTop="20dp"
+         android:background="@drawable/roundshapebtn"
+         android:text="Quiz 2" />
+
+     <Button
+         android:id="@+id/button_point_test3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="240dp"
+         android:layout_below="@+id/button_point_test2"
+         android:background="@drawable/roundshapebtn"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="20dp"
+         android:text="MCQ Test" />
+	
+</RelativeLayout>

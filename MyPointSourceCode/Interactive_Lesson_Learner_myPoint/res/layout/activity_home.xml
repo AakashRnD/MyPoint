@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/home_activity"
+    tools:context=".HomeActivity" 
+    android:screenOrientation="nosensor" android:configChanges="keyboardHidden|orientation">
+
+	<Button
+	    android:id="@+id/button_hm_1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/button_tour"
+	    android:layout_alignRight="@+id/button_tour"
+	    android:layout_below="@+id/button_tour"
+	    android:layout_marginTop="36dp"
+	    android:background="@drawable/roundshapebtn"
+	    android:shadowColor="#121233"
+	    android:text="Start MyPoint" />
+
+	<Button
+	    android:id="@+id/button_tour"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/textView1"
+	    android:layout_marginTop="35dp"
+	    android:background="@drawable/roundshapebtn"
+	    android:shadowColor="#121233"
+	    android:text=" Application Guide " />
+
+	<TextView
+	    android:id="@+id/textView1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/textView2"
+	    android:layout_marginRight="144dp"
+	    android:layout_toLeftOf="@+id/button_tour"
+	    android:singleLine="true"
+	    android:text="Learn Plotting Your Way"
+	    android:visibility="invisible"
+	    android:textColor="#000000"
+	    android:textSize="20px" />
+
+	<TextView
+	    android:id="@+id/textView2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_alignRight="@+id/textView1"
+	    android:layout_marginRight="233dp"
+	    android:singleLine="true"
+	    android:visibility="invisible"
+	    android:text="myPoint"
+	    android:textColor="#00ff00"
+	    android:textSize="30px" />
+		
+</RelativeLayout>

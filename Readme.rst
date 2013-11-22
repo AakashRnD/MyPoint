@@ -1,4 +1,4 @@
-::::::::::::::::::::::::::::::::::::::::::::::::Contents::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::Contents::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 1. Source Code    : Folder named Interactive_Lesson_Learner_myPoint.
 2. Apk            : Interactive_Lesson_Learner_myPoint.apk
@@ -15,13 +15,13 @@
              provides functionalities which help students to explore respective lesson beyond the scope of textbook.
 
 
-::::::::::::::::::::::::::::::::::::::::::::::::Installation Process::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::Installation Process::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 	---- Copy the Interactive_Lesson_Learner_myPoint.apk file into your android device.
 	---- Tap on Interactive_Lesson_Learner_myPoint.apk file and follow the instructions to install.
 
 
-::::::::::::::::::::::::::::::::::::::::::::::::Development Team::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::Development Team::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 	---- Project Head
 
